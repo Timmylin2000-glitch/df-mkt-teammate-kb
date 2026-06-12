@@ -1,2 +1,4 @@
+# Allow reading (so Claude / ChatGPT / Gemini can fetch the URL on request).
+# Search-result indexing is prevented per-page via <meta name="robots" content="noindex">.
 User-agent: *
-Disallow: /
+Allow: /
