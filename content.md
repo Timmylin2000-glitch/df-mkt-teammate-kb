@@ -50,22 +50,25 @@ Partnerships
 ## SM Links
 ### Official Channels
 - Channel: Language | TIMI Global: EN | SMP: EN | TW: ZH-TW | ID: ID | TH: TH | VN: VI | MX: ES | BR: PT | MENA: AR | TR: TR
-- Channel: Website | TIMI Global: https://www.playdeltaforce.com/ | SMP: https://deltaforce.garena.com/en | TW: https://deltaforce.garena.com/zh_tw | ID: https://deltaforce.garena.com/id | TH: https://deltaforce.garena.com/th | VN: https://deltaforce.garena.com/vn | MX: https://deltaforce.garena.com/es | BR: https://deltaforce.garena.com/pt | MENA: https://deltaforce.garena.com/ar | TR: https://deltaforce.garena.com/tr
+- Channel: Website | TIMI Global: https://www.playdeltaforce.com/ | SMP: https://deltaforce.garena.com/en | TW: https://deltaforce.garena.com/zh_tw | ID: https://deltaforce.garena.com/id | TH: https://deltaforce.garena.com/th | VN: https://deltaforce.garena.vn/ | MX: https://deltaforce.garena.com/es | BR: https://deltaforce.garena.com/pt | MENA: https://deltaforce.garena.com/ar | TR: https://deltaforce.garena.com/tr
 - Channel: Facebook | TIMI Global: https://www.facebook.com/deltaforcegame/ | SMP: https://www.facebook.com/garenadeltaforce | TW: https://www.facebook.com/profile.php?id=61566742447802 | ID: https://www.facebook.com/garenadfid/ | TH: https://www.facebook.com/GarenaDeltaForceTH/ | VN: https://www.facebook.com/GarenaDeltaForceVN | MX: https://www.facebook.com/garenadeltaforcelatam | BR: https://www.facebook.com/BRDeltaForce | MENA: https://web.facebook.com/garenadeltaforcemena | TR: https://www.facebook.com/garenadeltaforceturkiye/
 - Channel: Instagram | TIMI Global: https://www.instagram.com/deltaforcegameglobal/ | SMP: https://www.instagram.com/garena.deltaforce/ | TW: https://www.instagram.com/garenadeltaforcetw/ | ID: https://www.instagram.com/garenadfid/ | TH: https://www.instagram.com/garenadfth/ | VN: https://www.instagram.com/garenadeltaforcevn/ | MX: https://www.instagram.com/garenadeltaforcelatam/ | BR: https://www.instagram.com/brdeltaforce | MENA: https://www.instagram.com/garenadeltaforcemena/ | TR: https://www.instagram.com/garenadeltaforceturkiye/
-- Channel: Threads | TW: https://www.threads.net/@garenadeltaforcetw
+- Channel: Threads | TW: https://www.threads.com/@garenadeltaforcetw
 - Channel: YouTube | TIMI Global: https://www.youtube.com/@DeltaForceGame | SMP: https://www.youtube.com/@GarenaDFSMP | TW: https://www.youtube.com/@GarenaDeltaForceTW | ID: https://www.youtube.com/@garenadfid | TH: https://www.youtube.com/@GarenaDeltaForceTH | VN: https://www.youtube.com/@GarenaDeltaForceVN | MX: https://www.youtube.com/@garenadeltaforcelatam | BR: https://www.youtube.com/@BRDeltaForce | MENA: https://www.youtube.com/@GarenadeltaforceMena | TR: https://www.youtube.com/@GarenadeltaforceTR
 - Channel: TikTok | TIMI Global: https://www.tiktok.com/@deltaforcegame | SMP: https://www.tiktok.com/@garenadeltaforce | TW: https://www.tiktok.com/@garenadeltaforcetw | ID: https://www.tiktok.com/@garenadfid | TH: https://www.tiktok.com/@garenadeltaforceth | VN: https://www.tiktok.com/@garenadeltaforcevn | MX: https://www.tiktok.com/@garenadeltaforcelatam | BR: https://www.tiktok.com/@BRDeltaForce | MENA: https://www.tiktok.com/@garenadeltaforcemena | TR: https://www.tiktok.com/@garenadeltaforcetr
 - Channel: Twitter / X | TIMI Global: https://x.com/DeltaForce_Game | MX: https://x.com/deltaforce_lat | BR: https://www.x.com/BRDeltaForce
-- Channel: Discord | TIMI Global: https://discord.com/invite/deltaforcegame | TW: https://discord.com/invite/b7WmrQWDq9 | VN: https://discord.gg/D8rkVfKe | MX: https://discord.com/invite/b7WmrQWDq9
-- Channel: Twitch | BR: https://twitch.tv/BRDeltaForce
+- Channel: Discord | TIMI Global: https://discord.com/invite/deltaforcegame | TW: https://discord.com/invite/b7WmrQWDq9 | ID: https://discord.com/invite/7DTJNR5qpP | VN: https://discord.gg/e33DEGMCC2 | MX: https://discord.com/invite/b7WmrQWDq9 | BR: http://discord.gg/garenadeltaforce | MENA: https://discord.gg/z56FgTc9A | TR: discord.gg/garenadeltaforcetr
+- Channel: Twitch | TW: https://www.twitch.tv/deltaforcetw | BR: https://twitch.tv/BRDeltaForce
 ### Non-Official Channels
 - Channel: Facebook | VN: https://www.facebook.com/gaming/deltaforcenews
 - Channel: Instagram | ID: https://www.instagram.com/deltaforcecommunityid/ | MENA: https://www.instagram.com/operators_mena/ | TR: https://www.instagram.com/operators_turkiye/reels/
-- Channel: YouTube | BR: https://youtube.com/@clipesdodeltinha
-- Channel: TikTok | ID: https://www.tiktok.com/@mimindelta_ | TH: https://www.tiktok.com/@_commudfth | BR: https://www.tiktok.com/@clipesdodeltinha | MENA: https://www.tiktok.com/@operators_mena
+- Channel: YouTube | VN: https://www.youtube.com/@DeltaForce_News | BR: https://youtube.com/@clipesdodeltinha
+- Channel: TikTok | ID: https://www.tiktok.com/@mimindelta_ | TH: https://www.tiktok.com/@_commudfth | VN: https://www.tiktok.com/@delta_forcenews | BR: https://www.tiktok.com/@clipesdodeltinha | MENA: https://www.tiktok.com/@operators_mena | TR: https://www.tiktok.com/@operators_tr
 ### Esports Channels
-- Facebook | https://www.facebook.com/chienthanDF/
+- Facebook | https://www.facebook.com/GarenaDeltaForceEsportsTH | https://www.facebook.com/chienthanDF/
+- Instagram | https://www.instagram.com/garenadfesportsth/ | https://www.instagram.com/chienthandf/
+- TikTok | https://www.tiktok.com/@chienthandf
+- Youtube | https://www.youtube.com/@ChienThanDeltaForce
 
 ## Tab 1 · Budget & Plan
 ### Quarterly Marketing Plan
@@ -228,7 +231,10 @@ A: ① Too AI-generated in appearance (TC is sensitive to obvious AI art — if 
 
 Q: If an approved asset is only resized or has translated copy, does it need re-review?
 A: No, but localized copy must be sent back to Regional for collection.
-- **Related Links**: [[DF] Non IP asset review](https://docs.google.com/spreadsheets/d/1wa8A5OdVBgk9ouc96gyoqULiZKGZCPttq4KfM9cS3KA/edit?pli=1&gid=1043618357)
+
+Q: Can we tell users the nationality of the operators?
+A: No, we can not include "nationality" and "nation flags" in all posting.
+- **Related Links**: [DF] Non IP asset review
 
 ### In-game Asset Review (All In-game Visuals — No Exceptions)
 - **Regional PIC**: Mye
@@ -255,7 +261,7 @@ A: ① Too AI-generated (TC is increasingly sensitive — refine until it doesn'
 
 Q: How quickly will I receive feedback?
 A: TC reviews daily; feedback is emailed at 11:00–12:00 and 18:00–19:00 GMT+8. For urgent items, contact Mye directly on Seatalk.
-- **Related Links**: [[DF] Non IP asset review](https://docs.google.com/spreadsheets/d/1wa8A5OdVBgk9ouc96gyoqULiZKGZCPttq4KfM9cS3KA/edit?pli=1&gid=1557355396)
+- **Related Links**: [DF] Non IP asset review
 
 ### Raw Material Request (Official Game Assets for Marketing Production)
 - **Regional PIC**: Ruru
@@ -280,7 +286,7 @@ A: ~2–3 business days. Ruru updates the asset library on Wednesdays and Friday
 
 Q: Where can I find the asset library?
 A: Asset library location will be added once fully set up.
-- **Related Links**: [[DF] GA MKT Sheet - External](https://docs.google.com/spreadsheets/d/1gh4QVwo0y30HYJe3RbIbJXfC87-kL0CW6CNKhI3sYZo/edit?gid=0)
+- **Related Links**: [DF] GA MKT Sheet - External
 
 ## Tab 4 · Social Media
 _(No content yet.)_
@@ -296,7 +302,7 @@ Local only needs to execute localization
 Do not publish early under any circumstances
 - **Common Q&A**: Q: Can local teams add or modify content during localization?
 A: Mostly translation and rewording only. If additional local information needs to be added, confirm with Ruru first — any additions must be submitted for TC review.
-- **Related Links**: [02 - PR](https://drive.google.com/drive/u/0/folders/19AJ4hOzNs2beqhKk9nnpPqSrU1Xc8lN8)
+- **Related Links**: 02 - PR
 
 ### Local-Authored Press Release — Review & Approval
 - **Regional PIC**: Ruru
@@ -320,7 +326,7 @@ A: Yes — Reg PR and TC both review based on the English version. Without it, t
 
 Q: What does TC typically scrutinize?
 A: Brand tone, sensitive topics (politics, religion, etc.), data accuracy (no errors in numbers or reward descriptions), and whether any unreleased game information is disclosed.
-- **Related Links**: [02 - PR](https://drive.google.com/drive/u/0/folders/19AJ4hOzNs2beqhKk9nnpPqSrU1Xc8lN8)
+- **Related Links**: 02 - PR
 
 ## Tab 7 · Esports
 ### Tournament Plan Submission
@@ -334,7 +340,7 @@ Columns V–Z: post-event performance data (fill in when local teams are prepari
 - **Timeline**: Fill in at least 2 weeks before the tournament
 - **Common Q&A**: Q: Which columns do I need to fill?
 A: Columns A–Y for tournament planning info; after the event ends, fill V–Z with performance data
-- **Related Links**: [[DF_Regional]2026 Esports Ecosystem Mastersheet](https://docs.google.com/spreadsheets/d/1dGR5SoCosSZy2lxCK7xaYukAOcmlpqS431fVTARDvCw/edit?gid=835317633)
+- **Related Links**: [DF_Regional]2026 Esports Ecosystem Mastersheet
 
 ### Custom Room Request
 - **Regional PIC**: Hua
@@ -345,7 +351,7 @@ A: Columns A–Y for tournament planning info; after the event ends, fill V–Z 
 - **Timeline**: Submit the list monthly (before 25th in each month for next month's application)
 - **Common Q&A**: Q: What's the difference between Custom Room and Esports Server Account?
 A: Custom Room is a customizable in-game lobby within the live game version; Esports Server Account is a dedicated tournament server account used for official esports events.
-- **Related Links**: [[DF] Custom room permissions](https://docs.google.com/spreadsheets/d/1xWGB9dy0TLMt4dWyhg077gspfhtA5wpnI-fwjS2VzbQ/edit?gid=1866543072)
+- **Related Links**: [DF] Custom room permissions
 
 ### Esports Server Account Request (PC & Mobile — Same Process)
 - **Regional PIC**: Hua
@@ -365,7 +371,7 @@ A: Yes, but submit a reset list to Regional PIC. Reset takes ~3 business days.
 
 Q: Does a mobile patch update affect the esports server?
 A: Mobile and PC patch timelines are synchronized — keep patch schedules in mind when planning events.
-- **Related Links**: [[DF]PC Esports Server Account Application](https://docs.google.com/spreadsheets/d/1AolzIQFgdcvc5fapK3rBHvZVklIVN8rpyrrhwJn2-mY/edit?gid=321451729)
+- **Related Links**: [DF]PC Esports Server Account Application
 
 ## Tab 8 · Partnership & IP
 ### BD Cross-Industry Partnership Proposal
@@ -384,7 +390,7 @@ Column F — three parts:
 - **Timeline**: At least 3 weeks in advance (including TC review of ~10 business days)
 - **Common Q&A**: Q: Common reasons for TC rejection?
 A: Brand image inconsistent with Delta Force's identity, or brand has been involved in negative incidents. TC evaluates from a global perspective — not just local market context.
-- **Related Links**: [[DF] In-game Item Request for MKT Campaigns & Partnership Review](https://docs.google.com/spreadsheets/d/1dagTQdPyMdw9FgqBLsrSxG8iuoGP9d5YmdSrfNZr1DY/edit?pli=1&gid=1851913307)
+- **Related Links**: [DF] In-game Item Request for MKT Campaigns & Partnership Review
 
 ### IP Collaboration (Regional-Led, Local Execution)
 - **Regional PIC**: Mye
@@ -397,6 +403,7 @@ A: Brand image inconsistent with Delta Force's identity, or brand has been invol
 ① Dedicated email thread (Regional + Local + IP partner)
 ② Collab Summary (background, collaboration content, each market's execution items, results)
 ③ Asset folder (KV, video, licensed materials)
+*All IP-related stuff can be referred to the collab summary email- [Confidential] [DF] (IP Name) Collaboration Summary
 
 Local must prepare:
 Promo Plan (planned activities: KOL, Cosplay, UGC, social posts, etc.)
@@ -412,7 +419,7 @@ A: No — all pre-launch assets are confidential.
 
 Q: Does resizing an approved asset or translating approved copy require re-review?
 A: No, but localized copy must be sent back to Regional for collection.
-- **Related Links**: [21 - IP collaboration](https://drive.google.com/drive/u/0/folders/1RdCEV_m_XjLIYEPbLmAQpaiQD65OD0uc)
+- **Related Links**: 21 - IP collaboration
 
 ## Tab 9 · In-game Items
 ### In-game Items Requirement
@@ -436,7 +443,7 @@ A: No — TC approval is still required regardless of item type.
 
 Q: How should rewards be selected?
 A: Revenue items (incl. DT, legendary skin) can only be distributed in small quantities. Prefer consumable items — refer to the available item list for guidance.
-- **Related Links**: [[DF] In-game Item Request for MKT Campaigns & Partnership Review](https://docs.google.com/spreadsheets/d/1dagTQdPyMdw9FgqBLsrSxG8iuoGP9d5YmdSrfNZr1DY/edit?pli=1&gid=640741664)
+- **Related Links**: [DF] In-game Item Request for MKT Campaigns & Partnership Review
 
 ## Tab 10 · CCP
 ### Monthly Performance Data Submission
@@ -487,7 +494,7 @@ A: Yes — start with the Word Card localization using the PSD template provided
 
 Q: What formats need to be submitted?
 A: Both Apple Store and Google Play require banners and videos — specifications are listed in each round's Mastersheet.
-- **Related Links**: [06 - Store Assets](https://drive.google.com/drive/folders/1cjV3pRaHAJYKWkEyUbyqGlTTATAwbgg8)
+- **Related Links**: 06 - Store Assets
 
 ### Early Access Server Arrangement for KOL Preview
 - **Regional PIC**: Tim
@@ -506,7 +513,7 @@ A: Must use the TIMI Global PC Launcher — the Garena Launcher does not have th
 
 Q: Which game modes are available on the Early Access server?
 A: Determined by TC — some modes may be unavailable if conditions are not met.
-- **Related Links**: [[DF] MO Launch Marketing Plan](https://docs.google.com/spreadsheets/d/1nhTBdZ6iLpWTx-TgHZ8zNhdrTJjJpwy9OB9zBmL6O38/edit?pli=1&gid=996232706)
+- **Related Links**: [DF] MO Launch Marketing Plan
 
 ### In-game Event Calendar (Internal — Confidential)
 - **Regional PIC**: Ruru
@@ -516,7 +523,7 @@ Local checks the calendar regularly to review upcoming in-game event schedules
 - **Timeline**: —
 - **Common Q&A**: Q: Can the event calendar information be shared externally?
 A: No — this is an internal confidential document. Keep strictly confidential to prevent early leak of event info.
-- **Related Links**: [[DF] Patch Calendar](https://docs.google.com/spreadsheets/d/1Koh9d7GRh84Lt98OhGPHfMnjaxulpyUdrvZamYsgymg/edit?pli=1&gid=491851798)
+- **Related Links**: [DF] Patch Calendar
 
 ### Post-Patch Social Sentiment Collection
 - **Regional PIC**: Ruru
@@ -549,4 +556,4 @@ Asset dimensions:
 Additional recommendations are handled case by case and are usually time-sensitive
 - **Common Q&A**: Q: What's the difference between IAE and LOC?
 A: IAE (In-App Event) is Apple Store's event feature recommendation slot; LOC is the equivalent event recommendation mechanism on Google Play.
-- **Related Links**: [Store Feature](https://drive.google.com/drive/u/0/folders/1-mXTCss3T9tbcBEObZnchlr8BmkBEtJM)
+- **Related Links**: Store Feature
