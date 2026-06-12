@@ -61,9 +61,10 @@ python build_apps_script.py    # 產出 apps-script/Code.gs
 
 | 檔案 | 用途 |
 |------|------|
-| `generate_site.py` | 從 Excel 產生 `index.html`（版型 source of truth、過渡期用） |
+| `generate_site.py` | 從 Excel 產生 `index.html` + `content.md`（版型 source of truth；會把 `assets/logo.png` 以 base64 內嵌） |
 | `build_apps_script.py` | 把 `index.html` 模板打包成 `Code.gs` |
 | `Code.gs` | Apps Script 程式（已貼進 Google Sheet；此為備份） |
+| `assets/logo.png` | 左上角 sidebar logo（已去白底透明化）；換 logo 換這張再重新產生即可 |
 
 ## Token 與帳號歸屬
 

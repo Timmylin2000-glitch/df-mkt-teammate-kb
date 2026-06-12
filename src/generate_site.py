@@ -5,10 +5,14 @@ Reads the Excel file and outputs index.html in the same folder.
 Re-run this script whenever the Excel content is updated.
 """
 from openpyxl import load_workbook
-import json, os, re
+import json, os, re, base64
 
 EXCEL = r"C:\Users\lintim\Desktop\claude\DF REG MKT\DF REG MKT Teammate\DF Regional Marketing TeamMate.xlsx"
 HERE  = os.path.dirname(os.path.abspath(__file__))
+
+# Sidebar logo, embedded as a data URI so the page stays self-contained.
+with open(os.path.join(HERE, 'assets', 'logo.png'), 'rb') as _lf:
+    LOGO_DATA_URI = 'data:image/png;base64,' + base64.b64encode(_lf.read()).decode('ascii')
 
 def c(v):
     return str(v).strip() if v is not None else ""
@@ -94,7 +98,7 @@ data['_sm'] = sm
 NAV = [
     {"id":"_index",    "label":"Index",              "type":"index"},
     {"id":"_contactor","label":"Contactor",           "type":"contactor"},
-    {"id":"_sm",       "label":"SM Links",            "type":"sm"},
+    {"id":"_sm",       "label":"Social Media Links",  "type":"sm"},
     {"id":"sep1",      "sep": True},
     {"id":"tab1",  "label":"Tab 1 · Budget & Plan",  "sheet":"Tab1 Budget Plan & Report"},
     {"id":"tab2",  "label":"Tab 2 · OM",             "sheet":"Tab2 OM"},
@@ -126,6 +130,7 @@ HTML = r"""<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
 <title>DF REG MKT Teammate</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -134,7 +139,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-siz
 /* ── Sidebar ── */
 #sidebar{width:228px;min-width:228px;background:#0f172a;color:#94a3b8;display:flex;flex-direction:column;overflow-y:auto;flex-shrink:0}
 #sidebar-header{padding:20px 16px 14px;border-bottom:1px solid #1e293b}
-#sidebar-header .logo{font-size:11px;font-weight:700;letter-spacing:.1em;color:#64748b;text-transform:uppercase;margin-bottom:4px}
+#sidebar-header .logo-img{width:132px;height:auto;display:block;margin-bottom:10px}
 #sidebar-header .title{font-size:15px;font-weight:700;color:#f1f5f9;line-height:1.3}
 #nav-list{list-style:none;padding:8px 0;flex:1}
 #nav-list li.sep{height:1px;background:#1e293b;margin:8px 12px}
@@ -207,7 +212,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-siz
 <body>
 <aside id="sidebar">
   <div id="sidebar-header">
-    <div class="logo">Delta Force</div>
+    <img class="logo-img" src="__LOGO__" alt="Delta Force">
     <div class="title">REG MKT Teammate</div>
   </div>
   <ul id="nav-list"></ul>
@@ -282,7 +287,7 @@ function renderCards(rows, query){
 
 function tabIdFromName(name){
   const m={
-    'Contactor':'_contactor','SM Links':'_sm',
+    'Contactor':'_contactor','SM Links':'_sm','Social Media Links':'_sm',
     'Budget & Plan':'tab1','OM':'tab2','Assets':'tab3',
     'Social Media':'tab4','PR':'tab5','Esports':'tab7',
     'Cross-Industry & IP Partnerships':'tab8','Virtual Item Rewards':'tab9',
@@ -427,8 +432,85 @@ navigate('_index');
 </body>
 </html>"""
 
+HTML = HTML.replace('__LOGO__', LOGO_DATA_URI)
+
 out_html = os.path.join(HERE, 'index.html')
 with open(out_html, 'w', encoding='utf-8') as f:
     f.write(HTML)
 
 print(f"Generated: {out_html}")
+
+# ─── AI-friendly plain Markdown (content.md) ──────────────────────────────────
+# Same data, flattened to text so Claude/ChatGPT/Gemini can read it directly.
+def build_markdown(nav, tabs):
+    L = ["# DF REG MKT Teammate — Knowledge Base", ""]
+    L.append("> Knowledge base for Local Marketing teams collaborating with DF Regional Marketing.")
+    L.append("> Each section is a scenario: who the Regional PIC is, the process, what to prepare, timeline, Q&A, and related links.")
+    L.append("")
+    for item in nav:
+        if item.get('sep'):
+            continue
+        nid, label = item['id'], item['label']
+        if nid == '_index':
+            L.append(f"## {label}")
+            for r in tabs['_index']:
+                L.append(f"- **{r['tab']}. {r['name']}** — {r['desc']}")
+            L.append("")
+        elif nid == '_contactor':
+            cc = tabs['_contactor']
+            L.append(f"## {label}")
+            L.append("### Regional Team")
+            for m in cc['team']:
+                L.append(f"- **{m['name']}** ({m['email']}): {m['resp']}")
+            L.append("### Local MKT Contactors")
+            for m in cc['contactors']:
+                L.append(f"- **{m['region']}**: {m['contact']} ({m['email']})")
+            L.append("")
+        elif nid == '_sm':
+            sm = tabs['_sm']
+            L.append(f"## {label}")
+            def sm_block(title, hdr, rows):
+                if not rows:
+                    return
+                L.append(f"### {title}")
+                for row in rows:
+                    pairs = [f"{hdr[i]}: {row[i]}" for i in range(len(hdr))
+                             if i < len(row) and row[i] and row[i] != '—']
+                    if pairs:
+                        L.append("- " + " | ".join(pairs))
+            sm_block("Official Channels", sm['off_hdr'], sm['off'])
+            sm_block("Non-Official Channels", sm['non_hdr'], sm['non'])
+            if sm['esp']:
+                L.append("### Esports Channels")
+                for row in sm['esp']:
+                    cells = [x for x in row if x and x != '—']
+                    if cells:
+                        L.append("- " + " | ".join(cells))
+            L.append("")
+        else:
+            rows = tabs.get(nid, [])
+            L.append(f"## {label}")
+            if not rows:
+                L.append("_(No content yet.)_")
+                L.append("")
+                continue
+            for r in rows:
+                L.append(f"### {r.get('scenario') or '(Untitled)'}")
+                if r.get('pic'):      L.append(f"- **Regional PIC**: {r['pic']}")
+                if r.get('steps'):    L.append(f"- **Process Steps**: {r['steps']}")
+                if r.get('prepare'):  L.append(f"- **What to Prepare**: {r['prepare']}")
+                if r.get('timeline'): L.append(f"- **Timeline**: {r['timeline']}")
+                if r.get('qa'):       L.append(f"- **Common Q&A**: {r['qa']}")
+                if r.get('links'):
+                    if r.get('links_url'):
+                        L.append(f"- **Related Links**: [{r['links']}]({r['links_url']})")
+                    else:
+                        L.append(f"- **Related Links**: {r['links']}")
+                L.append("")
+    return "\n".join(L)
+
+out_md = os.path.join(HERE, 'content.md')
+with open(out_md, 'w', encoding='utf-8') as f:
+    f.write(build_markdown(NAV, tabs))
+
+print(f"Generated: {out_md}")

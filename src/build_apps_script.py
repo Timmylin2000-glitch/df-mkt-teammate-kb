@@ -41,8 +41,8 @@ GAS = r'''/**
  */
 
 var CONFIG = {
-  owner:  'Timmylin2000-glitch',
-  repo:   'df-mkt-teammate-kb',
+  owner:  'garena-df-regional',
+  repo:   'marketing-teammate',
   branch: 'main',
   path:   'index.html'
 };
@@ -55,7 +55,7 @@ var STD = ['scenario','pic','steps','prepare','timeline','qa','links'];
 var NAV = [
   {id:'_index',     label:'Index',                    type:'index'},
   {id:'_contactor', label:'Contactor',                type:'contactor'},
-  {id:'_sm',        label:'SM Links',                 type:'sm'},
+  {id:'_sm',        label:'Social Media Links',       type:'sm'},
   {id:'sep1',       sep:true},
   {id:'tab1',  label:'Tab 1 · Budget & Plan',    sheet:'Tab1 Budget Plan & Report'},
   {id:'tab2',  label:'Tab 2 · OM',               sheet:'Tab2 OM'},
@@ -107,8 +107,8 @@ function updateWebsite() {
   try {
     SpreadsheetApp.getActiveSpreadsheet().toast('Building site…', 'DF MKT Site', 30);
     var data = buildData();
-    var html = buildHtml(data);
-    pushToGitHub(html, token);
+    pushFile(CONFIG.path, buildHtml(data), token);     // index.html (human UI)
+    pushFile('content.md', buildMarkdown(data), token); // plain text for AI
     var url = 'https://' + CONFIG.owner.toLowerCase() + '.github.io/' + CONFIG.repo + '/';
     SpreadsheetApp.getActiveSpreadsheet().toast('Done. Live in ~1 min.', 'DF MKT Site', 8);
     ui.alert('Website updated.\n\n' + url + '\n\nChanges go live in about 1 minute.');
@@ -273,10 +273,78 @@ function buildHtml(data) {
   return template.split('__DATA_JSON__').join(json);
 }
 
-// ─── Push to GitHub via the contents API ───────────────────────────────────────
-function pushToGitHub(html, token) {
+// AI-friendly plain Markdown (mirrors generate_site.py build_markdown)
+function buildMarkdown(data) {
+  var nav = data.nav, tabs = data.tabs;
+  var L = ['# DF REG MKT Teammate — Knowledge Base', ''];
+  L.push('> Knowledge base for Local Marketing teams collaborating with DF Regional Marketing.');
+  L.push('> Each section is a scenario: who the Regional PIC is, the process, what to prepare, timeline, Q&A, and related links.');
+  L.push('');
+  nav.forEach(function (item) {
+    if (item.sep) return;
+    var nid = item.id, label = item.label;
+    if (nid === '_index') {
+      L.push('## ' + label);
+      tabs._index.forEach(function (r) { L.push('- **' + r.tab + '. ' + r.name + '** — ' + r.desc); });
+      L.push('');
+    } else if (nid === '_contactor') {
+      var cc = tabs._contactor;
+      L.push('## ' + label);
+      L.push('### Regional Team');
+      cc.team.forEach(function (m) { L.push('- **' + m.name + '** (' + m.email + '): ' + m.resp); });
+      L.push('### Local MKT Contactors');
+      cc.contactors.forEach(function (m) { L.push('- **' + m.region + '**: ' + m.contact + ' (' + m.email + ')'); });
+      L.push('');
+    } else if (nid === '_sm') {
+      var sm = tabs._sm;
+      L.push('## ' + label);
+      var smBlock = function (title, hdr, rows) {
+        if (!rows || !rows.length) return;
+        L.push('### ' + title);
+        rows.forEach(function (row) {
+          var pairs = [];
+          for (var i = 0; i < hdr.length; i++) {
+            if (i < row.length && row[i] && row[i] !== '—') pairs.push(hdr[i] + ': ' + row[i]);
+          }
+          if (pairs.length) L.push('- ' + pairs.join(' | '));
+        });
+      };
+      smBlock('Official Channels', sm.off_hdr, sm.off);
+      smBlock('Non-Official Channels', sm.non_hdr, sm.non);
+      if (sm.esp && sm.esp.length) {
+        L.push('### Esports Channels');
+        sm.esp.forEach(function (row) {
+          var cells = row.filter(function (x) { return x && x !== '—'; });
+          if (cells.length) L.push('- ' + cells.join(' | '));
+        });
+      }
+      L.push('');
+    } else {
+      var rows = tabs[nid] || [];
+      L.push('## ' + label);
+      if (!rows.length) { L.push('_(No content yet.)_'); L.push(''); return; }
+      rows.forEach(function (r) {
+        L.push('### ' + (r.scenario || '(Untitled)'));
+        if (r.pic)      L.push('- **Regional PIC**: ' + r.pic);
+        if (r.steps)    L.push('- **Process Steps**: ' + r.steps);
+        if (r.prepare)  L.push('- **What to Prepare**: ' + r.prepare);
+        if (r.timeline) L.push('- **Timeline**: ' + r.timeline);
+        if (r.qa)       L.push('- **Common Q&A**: ' + r.qa);
+        if (r.links) {
+          if (r.links_url) L.push('- **Related Links**: [' + r.links + '](' + r.links_url + ')');
+          else L.push('- **Related Links**: ' + r.links);
+        }
+        L.push('');
+      });
+    }
+  });
+  return L.join('\n');
+}
+
+// ─── Push one file to GitHub via the contents API ──────────────────────────────
+function pushFile(path, content, token) {
   var base = 'https://api.github.com/repos/' + CONFIG.owner + '/' + CONFIG.repo +
-             '/contents/' + CONFIG.path;
+             '/contents/' + path;
   var headers = {
     Authorization: 'token ' + token,
     Accept: 'application/vnd.github+json'
@@ -290,13 +358,13 @@ function pushToGitHub(html, token) {
   if (getRes.getResponseCode() === 200) {
     sha = JSON.parse(getRes.getContentText()).sha;
   } else if (getRes.getResponseCode() !== 404) {
-    throw new Error('GitHub GET failed (' + getRes.getResponseCode() + '): ' +
+    throw new Error('GitHub GET ' + path + ' failed (' + getRes.getResponseCode() + '): ' +
                     getRes.getContentText());
   }
 
   var payload = {
-    message: 'Update site from Google Sheet (' + new Date().toISOString() + ')',
-    content: Utilities.base64Encode(html, Utilities.Charset.UTF_8),
+    message: 'Update ' + path + ' from Google Sheet (' + new Date().toISOString() + ')',
+    content: Utilities.base64Encode(content, Utilities.Charset.UTF_8),
     branch: CONFIG.branch
   };
   if (sha) payload.sha = sha;
@@ -307,7 +375,7 @@ function pushToGitHub(html, token) {
   });
   var code = putRes.getResponseCode();
   if (code !== 200 && code !== 201) {
-    throw new Error('GitHub PUT failed (' + code + '): ' + putRes.getContentText());
+    throw new Error('GitHub PUT ' + path + ' failed (' + code + '): ' + putRes.getContentText());
   }
 }
 '''
