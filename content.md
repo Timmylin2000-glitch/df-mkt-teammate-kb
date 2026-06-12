@@ -32,10 +32,10 @@ PR
 Store Feature/Contact
 - **Hua** (fanh@garena.com): Esports
 TC-made MKT H5
-CCP
 - **Mye** (liumy@garena.com): Social media
 IP-related Campaign
 Partnerships
+- **Andie** (): CCP
 ### Local MKT Contactors
 - **TW**: Mye (liumy@garena.com)
 - **TH**: Tee (tee.r@garena.com)
