@@ -47,7 +47,7 @@ Partnerships
 - **MENA (AR)**: Zeynep (iscanz@garena.com)
 - **MENA (TR)**: Amira (souhnouna@garena.com)
 
-## SM Links
+## Social Media Links
 ### Official Channels
 - Channel: Language | TIMI Global: EN | SMP: EN | TW: ZH-TW | ID: ID | TH: TH | VN: VI | MX: ES | BR: PT | MENA: AR | TR: TR
 - Channel: Website | TIMI Global: https://www.playdeltaforce.com/ | SMP: https://deltaforce.garena.com/en | TW: https://deltaforce.garena.com/zh_tw | ID: https://deltaforce.garena.com/id | TH: https://deltaforce.garena.com/th | VN: https://deltaforce.garena.vn/ | MX: https://deltaforce.garena.com/es | BR: https://deltaforce.garena.com/pt | MENA: https://deltaforce.garena.com/ar | TR: https://deltaforce.garena.com/tr
