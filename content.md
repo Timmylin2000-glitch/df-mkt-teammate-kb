@@ -48,6 +48,10 @@ Partnerships
 - **MENA (AR)**: Zeynep (iscanz@garena.com)
 - **MENA (TR)**: Amira (souhnouna@garena.com)
 
+## Important Folder/Sheet/Doc
+- Name: In-game Item Request for MKT Campaigns
+Partnership Review | Link: https://docs.google.com/spreadsheets/d/1dagTQdPyMdw9FgqBLsrSxG8iuoGP9d5YmdSrfNZr1DY/edit?pli=1&gid=640741664#gid=640741664
+
 ## Social Media Links
 ### Official Channels
 - Channel: Language | TIMI Global: EN | SMP: EN | TW: ZH-TW | ID: ID | TH: TH | VN: VI | MX: ES | BR: PT | MENA: AR | TR: TR
@@ -71,7 +75,7 @@ Partnerships
 - TikTok | https://www.tiktok.com/@chienthandf
 - Youtube | https://www.youtube.com/@ChienThanDeltaForce
 
-## Tab 1 · Budget & Plan
+## Tab 1 · Budget Plan & Report
 ### Quarterly Marketing Plan
 Budget Request
 - **Regional PIC**: Tim, Ruru
@@ -422,7 +426,7 @@ Q: Does resizing an approved asset or translating approved copy require re-revie
 A: No, but localized copy must be sent back to Regional for collection.
 - **Related Links**: 21 - IP collaboration
 
-## Tab 9 · In-game Items
+## Tab 9 · In-game Items Requirement
 ### In-game Items Requirement
 (Community / Partnership / Esports)
 - **Regional PIC**: Tim, Hua
@@ -557,4 +561,16 @@ Asset dimensions:
 Additional recommendations are handled case by case and are usually time-sensitive
 - **Common Q&A**: Q: What's the difference between IAE and LOC?
 A: IAE (In-App Event) is Apple Store's event feature recommendation slot; LOC is the equivalent event recommendation mechanism on Google Play.
+- **Related Links**: Store Feature
+
+## Tab 14 · TEST
+### Test 123
+- **Regional PIC**: who
+- **Process Steps**: AaA
+BB
+- **What to Prepare**: 1
+2
+3
+- **Timeline**: nono
+- **Common Q&A**: tet
 - **Related Links**: Store Feature
